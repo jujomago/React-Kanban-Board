@@ -1,0 +1,32 @@
+.kanban {
+  border: 1px solid red;
+  flex: 1;
+  padding: 10px 20px;
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    li {
+      padding: 6px;
+      border: 1px solid gray;
+      margin-bottom: 5px;
+    }
+  }
+}
+.taskItem {
+  position: relative;
+  .taskItem-controls {
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    font-size: 23px;
+    span {
+      cursor: pointer;
+      &.disabled {
+        opacity: 0.2;
+        cursor: not-allowed;
+      }
+    }
+  }
+}
